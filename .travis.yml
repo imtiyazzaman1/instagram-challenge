@@ -1,9 +1,11 @@
 language: ruby
-
 cache: bundler
-
 rvm:
-  - 2.5.1
-
+- 2.5.1
 script:
-  - bundle exec rspec spec
+- bundle exec rspec spec
+deploy:
+  provider: heroku
+  api_key:
+    secure: DqTXW2L5MHurZ+HxiGzsnitCLqE0hoBm0B2JV5tbPT2rvA1ZZWivwE0JISLNFQR+Q+piixqtl3xCWf+HA0ODwBRyT5pf6U0X2VXk9vGGk+bfGSzSYPhCdR0xqSyf6W80mbHt+2g3oFg0qcI/S2dnhOYrhjnaD8q+jEAI6GmaQuLskn/m4wbmfJvO6hIP/KrWtjNUlrGb31ii4NUHYRnMpDJKg7TBqTuqjCGmQL+EeCGY3jUbZnbG4QI9EcAky147ISfHooFopewwdaPDWZAolzlef3I2h6Zf5RJjc1bM9bPqpeVqrktVERdm8jbwXN8pWzD5OxdRMiTXioqhs5EoWBttr9BFH2tKFG773CvFiIauKza5M1DsSOAC2PsB6XLGyfBDXuoDQs9rekcx+jMaSuyuXn9jJbXQQfH3nKZQ30ivB3aabGSzaeR9bcTrNDlib8v3wsXICqV0RqUpELRFJhx0vCvsc1NlX/CGfV1vs4UDSwO547TTppeNK0o0xvhnDj6WpAyYYIPfng8c+KBKF/FzrV9BPFI7FMkmeMwCJfJbw0NLwEnysXcsE8F/D8ryBssU1AxJuyb4XlcKiSd6IIkP11FTh3Zjv9gI2PZAlemHLxd35E6wG0it3JRlMe+y7rKht7W1gS+sYIkAyJ02VatuwgG5XZBe2kNLhb/pIC4=
+    app: imstagramm
